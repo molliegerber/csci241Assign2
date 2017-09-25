@@ -15,6 +15,7 @@
 
 ProviderDB::ProviderDB()
 {
+ numProviders = 0;
 }
 
 /***************************************************************
@@ -59,7 +60,7 @@ ProviderDB::ProviderDB(const char* fileName)
 
 void ProviderDB::print() const
 {
-   cout << "Health Care Provider Listing";
+   cout << "Health Care Provider Listing" << endl;
     for (int i=0; i < numProviders; i++)
     {
         providerArray[i].print();
